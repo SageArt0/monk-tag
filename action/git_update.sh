@@ -30,10 +30,6 @@ VNUM3=${CURRENT_VERSION_PARTS[2]}
 
 if [[ $VERSION == 'major' ]]; then
   VNUM1=v$((VNUM1+1))
-elseif [[ $VERSION == 'minor' ]]; then
-  VNUM2=v$((VNUM2+1))
-elseif [[ $VERSION == 'patch' ]]; then
-  VNUM3=v$((VNUM3+1))
 else
   echo "No version type"
   exit 1
