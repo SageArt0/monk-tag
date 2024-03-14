@@ -7,7 +7,6 @@ async function run() {
         const src = process.cwd();
         // rest of your code
 
-
         await exec.exec(`${src}/git_update.sh -v ${versionType}`);
     } catch(error) {
         core.setFailed(error.message);
