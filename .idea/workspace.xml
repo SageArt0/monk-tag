@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32f723aa-fbb9-4e44-a7e4-c020a3e45d18" name="Changes" comment="1st commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/monk-tag.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/action.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/action.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action/git_update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/action/tag_update.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action/tag_update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/action/tag_update.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710406163912</updated>
       <workItem from="1710406164929" duration="434000" />
-      <workItem from="1710406981411" duration="14499000" />
+      <workItem from="1710406981411" duration="15429000" />
     </task>
     <servers />
   </component>

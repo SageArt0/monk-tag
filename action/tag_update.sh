@@ -2,7 +2,7 @@
 
 ## Input parameters START
 # Read the YAML file
-file="./action.yml"
+file="../action.yml"
 # Use yq to extract the values
 tag_type=$(yq e '.inputs.tag-type' $file)
 version_value=$(yq e '.inputs.version-value' $file)
