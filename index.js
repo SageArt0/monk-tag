@@ -4,7 +4,9 @@ const exec = require('@actions/exec');
 async function run() {
     try {
         const versionType= core.getInput('version-type');
-        const src = __dirname__;
+        const src = process.cwd();
+        // rest of your code
+
 
         await exec.exec(`${src}/git_update.sh -v ${versionType}`);
     } catch(error) {
