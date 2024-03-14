@@ -10,8 +10,8 @@ do
 done
 echo "INPUT:$INPUT"
 IFS='.' read -ra QAZ <<< "$INPUT"
-tag_type=${ADDR[0]}
-version_value=${ADDR[1]}
+tag_type=${QAZ[0]}
+version_value=${QAZ[1]}
 
 echo "tagtype:$tag_type"
 echo "version_value:$version_value"
