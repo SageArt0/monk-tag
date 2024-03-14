@@ -27844,8 +27844,7 @@ const exec = __nccwpck_require__(5486);
 async function run() {
     try {
         const versionType= core.getInput('version-type');
-        const src = process.cwd();
-        // rest of your code
+        const src = __dirname;
 
         await exec.exec(`${src}/git_update.sh -v ${versionType}`);
     } catch(error) {
