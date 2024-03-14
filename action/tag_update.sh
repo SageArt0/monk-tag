@@ -12,6 +12,9 @@ IFS='.' read -ra QAZ <<< "$version_value"
 tag_type=${ADDR[0]}
 version_value=${ADDR[1]}
 
+echo "tagtype:$tag_type"
+echo "version_value:$version_value"
+
 ## Input parameters END
 
 ## major, minor, latest tag get START
