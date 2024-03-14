@@ -1,0 +1,13 @@
+name: Increment tag
+descriptions: It increments tags
+inputs:
+  version-type:
+    description: version type
+    required: true
+    default: patch
+outputs:
+  new-version:
+    description: new version
+runs:
+  using: node12
+  main: action/index.js
