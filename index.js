@@ -3,10 +3,12 @@ const exec = require('@actions/exec');
 
 async function run() {
     try {
-        const versionType= core.getInput('version-type');
+        const tagType = core.getInput('tag-type');
+        const versionType= core.getInput('version-value');
         const src = __dirname;
 
-        await exec.exec(`${src}/git_update.sh -v ${versionType}`);
+        await exec.exec(`${src}/tag_update.sh -v ${tagType}`);
+        await exec.exec(`${src}/tag_update.sh -v ${versionType}`);
     } catch(error) {
         core.setFailed(error.message);
     }

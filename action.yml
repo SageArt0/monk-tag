@@ -1,0 +1,19 @@
+name: TAG Incrementor
+description: Helps to generate different category of tags production, develop, hotfix, service pack fix
+inputs:
+  tag-type:
+    description: It Increments tag based on | prod, develop, hotfix-<prod-tag-name>-<hotfix-no-on-prod> eg.(hotfix-2001.4.0-1), spfix-<prod-tag-name>-<spfix-no-on-prod> eg.(spfix-2001.4.0-001)
+    required: true
+    default: prod
+
+  version-value:
+    description: major-minor value eg- "2001-4" | It can be empty, in that case major will be year and minor will be quater=<month>/4
+    required: true
+    default: 0-0
+
+outputs:
+  new-version:
+    description: Generated Tag Version
+runs:
+  using: node12
+  main: action/index.js
