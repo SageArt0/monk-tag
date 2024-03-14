@@ -1,19 +1,16 @@
 #!/bin/bash
 
 ## Input parameters START
-# Read the YAML file
-ls
-echo "a"
-cd ..
-ls
-echo "a"
-file="action.yml"
-cd action
-ls
-echo "a"
-# Use yq to extract the values
-tag_type=$(yq e '.inputs.tag-type' $file)
-version_value=$(yq e '.inputs.version-value' $file)
+# get parameters
+while getopts v: flag
+do
+  case "${flag}" in
+    v) INPUT=${OPTARG};;
+  esac
+done
+IFS='.' read -ra QAZ <<< "$version_value"
+tag_type=${ADDR[0]}
+version_value=${ADDR[1]}
 
 ## Input parameters END
 

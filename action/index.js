@@ -27847,8 +27847,7 @@ async function run() {
         const versionType= core.getInput('version-value');
         const src = __dirname;
 
-        await exec.exec(`${src}/tag_update.sh -v ${tagType}`);
-        await exec.exec(`${src}/tag_update.sh -v ${versionType}`);
+        await exec.exec(`${src}/tag_update.sh -v ${tagType}.${versionType}`);
     } catch(error) {
         core.setFailed(error.message);
     }
