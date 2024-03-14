@@ -8,7 +8,7 @@ do
     v) INPUT=${OPTARG};;
   esac
 done
-IFS='.' read -ra QAZ <<< "$version_value"
+IFS='.' read -ra QAZ <<< "$INPUT"
 tag_type=${ADDR[0]}
 version_value=${ADDR[1]}
 
